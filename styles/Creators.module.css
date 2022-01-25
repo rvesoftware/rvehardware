@@ -1,0 +1,56 @@
+.banner{
+    padding-top: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+.banner h2{
+    font-size: 6rem;
+}
+
+.banner p{
+    max-width: 650px;
+}
+
+.banner button{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    color: #f2f6fa;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+}
+
+.creatorCard{
+    width: 350px;
+    background-color: #191919;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.content{
+    padding: 2rem;
+}
+
+
+.content h2{
+    font-weight: 500;
+}
+
+.content .social{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+.content p{
+    color: rgba(255, 255, 255, .5);
+    font-size: 1.4rem;
+}

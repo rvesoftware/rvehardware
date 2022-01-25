@@ -1,9 +1,21 @@
-html,
-body {
+*{
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e0e10;
+  color: #f2f6fa;
+}
+
+body{
+  font-size: 1.6rem;
+  width: 90%;
+  max-width: 1500px;
+  margin: 2rem auto;
 }
 
 a {
@@ -11,6 +23,168 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+
+.dropdown{
+  position: relative;
+  margin-right: 1.5rem;
 }
+
+ .dropdown::before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #fff;
+  right: -15px;
+  top: 7px;
+  z-index: 10000;
+  border-top: 2px solid transparent;
+  border-right: 2px solid transparent;
+  transform: rotate(-45deg);
+  pointer-events: none;
+  transition: .5s;
+
+} 
+
+.dropdown:hover:before{
+  top: 12px;
+  transform: rotate(-225deg);
+}
+
+.dropdown:hover .option{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.dropdown a{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #f2f6fa;
+
+}
+
+.dropdown .option{
+  position: absolute;
+  top: 40px;
+  width: 100px;
+  overflow: hidden;
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+
+.dropdown .option div{
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+
+.canvas{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 50vh;
+  height: 100px;
+  margin-top: 4rem;
+   overflow: scroll; 
+} 
+
+.banner{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner h2{
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.banner p{
+  text-align: center;
+  font-size: 1.4rem;
+  max-width: 700px;
+  line-height: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.banner h3{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+section {
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+section p{
+  margin: 0 auto;
+  max-width: 600px;
+  margin-bottom: 4rem;
+}
+
+.proudContent{
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.proudContent .img{
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+
+
+.proudContent .img img{
+  width: 100%;
+  object-fit: cover;
+}
+
+.imgHover{
+  content: "\f0c1";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s;
+}
+
+.proudContent .img:hover .imgHover{
+  visibility: visible;
+  opacity: 1;
+}
+
+section button{
+ padding: 1rem;
+ border-radius: 5rem;
+ border: none;
+ margin-top: 4rem;
+ font-size: 1.4rem; 
+}
+
+/* section .canvas{
+  padding: 0;
+  height: 300px;
+} */
