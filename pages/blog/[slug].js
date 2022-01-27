@@ -79,7 +79,7 @@ export async function getServerSideProps(context) {
     const { slug } = params;
 
     const client = new ApolloClient({
-        uri: "http://localhost:4000",
+        uri: "https://rveapiql.herokuapp.com/",
         cache: new InMemoryCache()
     })
 
