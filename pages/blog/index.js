@@ -21,7 +21,7 @@ export default function Blog({posts}) {
         ["hace %s dias", "en %s dias"],
         ["hace 1 semana", "en 1 semana"],
         ["hace %s semanas", "en %s semanas"],
-        ["1 mes", "en 1 mes"],
+        ["hace 1 mes", "en 1 mes"],
         ["hace %s meses", "en %s meses"],
         ["hace 1 año", "en 1 año"],
         ["hace %s años", "en %s años"],
