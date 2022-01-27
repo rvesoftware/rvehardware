@@ -66,7 +66,7 @@ export default function Blog({posts}) {
 
       <div className={styles.container}>
         {posts.map((post) => (
-          <BlogCard  image={post.image} title={post.title} category={post.category} text={post.description} time={timeago(post.createdAt)} slug={post.slug} />
+          <BlogCard key={post.id}  image={post.image} title={post.title} category={post.category} text={post.description} time={timeago(post.createdAt)} slug={post.slug} />
         ))}
       </div>
     </Layout>
