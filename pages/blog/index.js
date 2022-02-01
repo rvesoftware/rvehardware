@@ -36,19 +36,21 @@ export default function Blog({posts}) {
     setViews(views + 1)
   }
 
-  console.log(views)
+  const [search, setSearch] = useState('')
+  const [oneCategory, setOneCategory] = useState('all')
+
   return (
     <Layout>
       <div className={styles.header}>
         <ul>
-          <li>Todo</li>
-          <li>Noticias</li>
-          <li>Reviews</li>
-          <li>Gaming</li>
-          <li>Software</li>
-          <li>Hardware</li>
+          <li onClick={() => setOneCategory('all')} className={oneCategory == 'all'? styles.activeItem : ''} >Todo</li>
+          <li onClick={() => setOneCategory('Noticias')} className={oneCategory == 'Noticias'? styles.activeItem : ''} >Noticias</li>
+          <li onClick={() => setOneCategory('Reviews')}  className={oneCategory == 'Reviews'? styles.activeItem : ''} >Reviews</li>
+          <li onClick={() => setOneCategory('Gaming')}   className={oneCategory == 'Gaming'? styles.activeItem : ''} >Gaming</li>
+          <li onClick={() => setOneCategory('Software')} className={oneCategory == 'Software'? styles.activeItem : ''} >Software</li>
+          <li onClick={() => setOneCategory('Hardware')} className={oneCategory == 'Hardware'? styles.activeItem : ''} >Hardware</li>
         </ul>
-        <input type="text" placeholder="Buscar en el blog" />
+        <input onChange={(e) => setSearch(e.target.value)} value={search} type="text" placeholder="Buscar en el blog" />
       </div>
 
       <div className={styles.firstNew}>
@@ -65,7 +67,9 @@ export default function Blog({posts}) {
       </div>
 
       <div className={styles.container}>
-        {posts.map((post) => (
+        {posts.filter((post) => oneCategory == 'all'? post : post.category == oneCategory)
+        .filter((post) => post.title.includes(search))
+        .map((post) => (
           <BlogCard key={post.id}  image={post.image} title={post.title} category={post.category} text={post.description} time={timeago(post.createdAt)} slug={post.slug} />
         ))}
       </div>

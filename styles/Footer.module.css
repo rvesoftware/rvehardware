@@ -1,0 +1,36 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.footer img{
+    width: 200px;
+}
+
+.footer ul{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+
+.footer p{
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 800px) {
+    .footer{
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .footer img{
+        width: 100%;
+    }
+}

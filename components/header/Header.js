@@ -52,6 +52,12 @@ export default function Header() {
       </nav>
 
       <ul>
+        <Link href="/pcgaming">
+          <a>
+            <i className='bx bx-shopping-bag' ></i>
+          </a>
+        </Link>
+
         <Link href="/">
           <a>
             <i className="bx bx-cart"></i>

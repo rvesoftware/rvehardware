@@ -15,7 +15,7 @@ body{
   font-size: 1.6rem;
   width: 90%;
   max-width: 1500px;
-  margin: 2rem auto;
+  margin: 2rem auto 0  auto;
 }
 
 a {
@@ -194,4 +194,56 @@ section button{
 .container{
   max-width: 800px;
   margin: 0 auto;
+}
+
+
+.loading_center {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.loading_center .img{
+  width: 200px;
+  transform: 1s;
+
+  animation: loading 3s linear infinite;
+
+}
+
+/* .loading__container {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #f2f6fa;
+  border-radius: 50px;
+  border-bottom: 1px solid transparent;
+  transform: 1s;
+  animation: loading 0.5s linear infinite;
+} */
+
+
+.loading_center h3{
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+}
+
+@keyframes loading {
+  from {
+    transform: scale(.5);
+  }
+  to {
+    transform: rotate(1);
+  }
+}
+
+
+@media screen and (max-width:800px) {
+  body{
+    margin: .5rem auto 0  auto;
+
+  }
 }

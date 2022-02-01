@@ -35,11 +35,21 @@
   background: transparent
     radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
     no-repeat padding-box;
+
+    position: relative;
+}
+
+.hardwareking img{
+  filter: invert(1);
+  position: absolute;
+  top: 70px;
+  width: 40%;
 }
 
 .hardwareking h2{
     font-size: 2.1rem;
     margin-bottom: 2rem;
+    margin-top: 9rem;
 }
 
 .hardwareking p{
@@ -92,7 +102,7 @@
 
 .title{
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .priceContent{
@@ -128,4 +138,264 @@
 
 .productCard:hover picture img{
   transform: scale(1.2);
+}
+
+.containerMain{
+  padding-bottom: 8rem;
+}
+
+.containerMain img{
+  max-width: 100%;
+}
+
+.containerMain h2{
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.dualBox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+
+.dualBox label{
+  border-radius: 1rem;
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+  padding: 2rem;
+  min-width: 50%;
+  height: 150px;
+  text-align: center;
+  display: flex;
+  gap: .5rem;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: transparent
+  radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
+  no-repeat padding-box;
+}
+
+.dualBox label i{
+  font-size: 3.5rem;
+}
+
+.containerHeader{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn{
+  background-color: #4169e1;
+  display: block;
+  width: 100px;
+  border-radius: .5rem;
+  padding: .5rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.containerHeader p{
+  font-size: 1.8rem;
+}
+
+.footerPrice{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: transparent
+  radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
+  no-repeat padding-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  border-radius: 1.5rem 1.5rem 0rem 0rem ;
+  z-index: 999;
+}
+
+.footerPrice button{
+  padding: .5rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+  cursor: pointer;
+}
+
+.footerPrice button i{
+  font-size: 2.5rem;
+
+}
+
+.footerCard{
+  position: fixed;
+  left: 0;
+  bottom: -800px;
+  background-color: #191919;
+  width: 100%;
+  padding: 2rem;
+  height: 80%;
+  transition: 1s;
+  padding-top: 1rem;
+  z-index: 999;
+}
+
+.footerCard.active{
+  bottom: 0;
+}
+
+.footerCard p{
+  font-size: 1.4rem;
+  margin-top: 6rem;
+}
+
+.footerCard .buttonsContainer{
+  margin: 0 auto;
+  width: 100%;
+  background-color: #2e2e2e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .5rem;
+  border-radius: 5rem;
+  margin-top: 2rem;
+}
+
+.buttonsContainer button{
+  width: 300px;
+  border-radius: 5rem;
+  height: 100%;
+  border: none ;
+  padding: .5rem;
+  cursor: pointer;
+  /* color: #ccc */
+  background-color: transparent;
+  color: #f2f6fa;
+
+}
+
+.buttonsContainer .activeButton{
+  background-color: #ccc;
+  color: #2e2e2e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+
+}
+
+.close{
+  padding: .2rem;
+  border-radius: 5rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  text-align: center;
+  position: fixed;
+  right: 20px;
+}
+
+.close i{
+  font-size: 2.5rem;
+}
+
+.footerCard h2:first-child{
+  position: fixed;
+}
+
+.footerCard ul{
+  list-style: none;
+  margin-top: 3rem;
+}
+
+.footerCard ul li{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerCard ul li p{
+  height: 20px;
+  overflow: hidden;
+  margin: .5rem 0;
+}
+
+.gamesBox{
+  margin-top: 2rem;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  gap: 1rem;
+  background: transparent
+  radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
+  no-repeat padding-box;
+}
+
+.boxContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.gamesBox img{
+  width: 50px;
+}
+
+.boxHeader{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.boxHeader i{
+  font-size: 2.5rem;
+}
+
+.containerMain ul{
+  list-style: none;
+}
+
+.box{
+  background: transparent
+  radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
+  no-repeat padding-box;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  height: 200px;
+  position: relative;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.box img{
+  width: 120px;
+}
+
+.box i:first-child{
+  position: absolute;
+  left: 0;
+  top: 35%;
+  font-size: 5rem;
+}
+
+.box i:last-child{
+  position: absolute;
+  right: 0;
+  top: 35%;
+  font-size: 5rem;
 }
