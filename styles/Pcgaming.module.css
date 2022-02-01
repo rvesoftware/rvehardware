@@ -245,13 +245,17 @@
   width: 100%;
   padding: 2rem;
   height: 80%;
-  transition: 1s;
+  transition: bottom .5s;
   padding-top: 1rem;
   z-index: 999;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .footerCard.active{
   bottom: 0;
+  opacity: 1;
+  visibility: visible;
 }
 
 .footerCard p{
