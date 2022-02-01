@@ -35,7 +35,7 @@ export default function PcGaming({computers}) {
 export async function getServerSideProps(){
 
   const client = new ApolloClient({
-    uri: "http://localhost:4000/graphql",
+    uri: "https://rveapiql.herokuapp.com/graphql",
     cache: new InMemoryCache
   })
 

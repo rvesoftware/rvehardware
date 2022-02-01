@@ -81,7 +81,7 @@ export default function Blog({posts}) {
 export async function getServerSideProps(){
 
   const client = new ApolloClient({
-    uri: "https://rveapiql.herokuapp.com/",
+    uri: "https://rveapiql.herokuapp.com/graphql",
     cache: new InMemoryCache
   })
 
