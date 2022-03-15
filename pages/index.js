@@ -15,6 +15,9 @@ export default function Home() {
       <div className={styles.container}>
         <div className="banner">
           <h2>Super. Mega. Rapido</h2>
+          <video width="100%" height="100%" loop autoPlay >
+            <source src="/VID2.mp4" type="video/mp4" />
+          </video>
           <p>
             Por mucho tiempo los amantes de los videojuegos se han conformado
             con una PC Gamer sin personalidad, sin carácter y sin aquello que te

@@ -21,6 +21,9 @@ export default function Creators() {
 
       <div className={styles.container}>
         <div className={styles.creatorCard}>
+          <div className={styles.mib}>
+            <img src="/hkpp.jpg" alt="" />
+          </div>
           <div className={styles.content}>
 
           <h2>HARDWARE KING</h2>

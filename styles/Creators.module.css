@@ -54,3 +54,10 @@
     color: rgba(255, 255, 255, .5);
     font-size: 1.4rem;
 }
+
+.creatorCard img:first-child{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+
