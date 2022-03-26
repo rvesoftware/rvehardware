@@ -1,18 +1,15 @@
-import Link from 'next/link'
-import { useState } from 'react';
-import styles from '../../styles/Header.module.css'
+import Link from "next/link";
+import { useState } from "react";
+import styles from "../../styles/Header.module.css";
 
 export default function Header() {
-  const [drop, setDrop] = useState(false)
+  const [drop, setDrop] = useState(false);
 
   return (
     <header className={styles.header}>
-      <div className={styles.menu}>
-        <button><i className='bx bx-menu'></i></button>
-      </div>
       <Link href="/">
-      <a>
-        <img src="./logo.svg" alt="" />
+        <a>
+          <img className={styles.logo} src="./logo.svg" alt="" />
         </a>
       </Link>
       <nav>
@@ -29,7 +26,11 @@ export default function Header() {
                 <a>PC Gaming</a>
               </Link>
             </div>
-            <div><Link href="/mini"><a>Mini PC</a></Link></div>
+            <div>
+              <Link href="/mini">
+                <a>Mini PC</a>
+              </Link>
+            </div>
             <div>Portatiles</div>
           </div>
         </div>
@@ -51,12 +52,11 @@ export default function Header() {
       </nav>
 
       <ul>
-
-        <Link href="/">
-          <a>
-            <i className="bx bx-cart"></i>
-          </a>
-        </Link>
+        <div className={styles.menu}>
+          <button >
+            <i class="bx bx-menu-alt-left"></i>
+          </button>
+        </div>
       </ul>
     </header>
   );

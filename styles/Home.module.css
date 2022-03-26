@@ -1,5 +1,5 @@
 .container {
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 
 .main {
@@ -113,4 +113,52 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+
+.containerBanner{
+  width: 100%;
+}
+
+.contentFot{
+  position: absolute;
+  bottom: 80px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentFot h3{
+  font-size: 1.8rem;
+  line-height: .5rem;
+}
+.contentFot h2{
+  font-size: 4rem;
+
+}
+
+.contentFot button{
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  background: none;
+  color: #fff;
+  border-radius: .5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+
+}
+
+.contentFot i{
+  font-size: 2.5rem;
+}
+
+.red{
+  display: flex;
+  gap: 2.5rem;
+}
+
+.firsTitle{
+  position: absolute;
+  top: 130px;  
 }

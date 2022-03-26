@@ -20,79 +20,65 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-.hardwareking {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  padding: 3rem;
-  width: 350px;
-  text-align: center;
-  height: 650px;
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  grid-auto-rows: 28rem;
+  grid-auto-columns: 35rem;
+  grid-template-rows: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.productCard {
+  /* width: 350px; */
+  /* min-width: 350px; */
+  /* height: 150px; */
+  overflow: hidden;
   border: 2px solid transparent;
   transition: border 0.2s ease-in-out;
   border-radius: 1rem;
   background: transparent
     radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
     no-repeat padding-box;
-
-    position: relative;
-}
-
-.hardwareking img{
-  filter: invert(1);
-  position: absolute;
-  top: 70px;
-  width: 40%;
-}
-
-.hardwareking h2{
-    font-size: 2.1rem;
-    margin-bottom: 2rem;
-    margin-top: 9rem;
-}
-
-.hardwareking p{
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-}
-
-.hardwareking button{
-    border: none;
-    padding: 2rem;
-    border-radius: 5rem;
-    background: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
-}
-
-.container{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    flex-direction: column;
+}
+
+.productCard .flex{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.productCard:nth-child(1) {
+  grid-row: span 2;
+  height: 100%;
 }
 
 
-.productCard{
-  width: 350px;
-  min-width: 350px;
-  height: 650px;
-  border: 2px solid transparent;
-  transition: border .2s ease-in-out;
-  border-radius: 1rem;
-  background: transparent radial-gradient(closest-side at 50% 50%,#2e2e2e 0,#191919 100%) 0 0 no-repeat padding-box;
-}
+ .title{
+  text-align: left;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  width: 100%;
 
-.productCard:hover{
+}
+.productCard:hover {
   border: 2px solid #ccc;
 }
 
-.productCard{
-  padding: 2rem;
+.productCard {
+  grid-row: span 2;
+  padding: 1rem;
 }
 
-.productCard button{
+.productCard button {
   width: 100%;
   padding: 1.5rem 1rem;
   border-radius: 5rem;
@@ -100,61 +86,119 @@
   cursor: pointer;
 }
 
-.title{
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-
-.priceContent{
+.priceContent {
   display: flex;
+  justify-content: start;
+  flex-direction: row-reverse;
   gap: 1rem;
+  width: 100%;
+  font-size: 1.4rem;
+
 }
 
-.price{
+.price {
   font-weight: 600;
+  /* color: springgreen; */
+  
 }
 
-.priceDiscount{
-  color: #ff2147;
+.priceDiscount {
+  color: rgba(255, 255, 255, 0.2);
   font-weight: 600;
   text-decoration: line-through;
+  text-align: right;
 }
 
-.productCard ul{
-  padding: 1.5rem;
-}
-
-.productCard picture{
+.productCard ul {
+  /* padding: 1.5rem; */
   width: 100%;
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .1rem;
+}
+
+.productCard ul li {
+  width: 100%;
+}
+
+.productCard picture {
+  width: 45%;
   overflow: hidden;
   object-fit: cover;
 }
 
-
-.productCard picture img{
+.productCard picture img {
   width: 100%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
-.productCard:hover picture img{
+.productCard:hover picture img {
   transform: scale(1.2);
 }
 
-.containerMain{
+.hardwareking {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+  /* width: 350px; */
+  text-align: center;
+  /* height: 650px; */
+  border: 2px solid transparent;
+  transition: border 0.2s ease-in-out;
+  border-radius: 1rem;
+  background: transparent
+    radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
+    no-repeat padding-box;
+
+  position: relative;
+}
+
+.hardwareking img {
+  filter: invert(1);
+  position: absolute;
+  top: 30px;
+  width: 35%;
+}
+
+.hardwareking h2 {
+  font-size: 2.1rem;
+  margin-bottom: 2rem;
+  margin-top: 12rem;
+}
+
+.hardwareking p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.hardwareking button {
+  border: none;
+  padding: 2rem;
+  border-radius: 5rem;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+
+.containerMain {
   padding-bottom: 8rem;
 }
 
-.containerMain img{
+.containerMain img {
   max-width: 100%;
 }
 
-.containerMain h2{
+.containerMain h2 {
   text-align: center;
   font-weight: 500;
   font-size: 2.5rem;
 }
 
-.dualBox{
+.dualBox {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,8 +206,7 @@
   margin-top: 2rem;
 }
 
-
-.dualBox label{
+.dualBox label {
   border-radius: 1rem;
   /* border: 1px solid rgba(255, 255, 255, 0.1); */
   padding: 2rem;
@@ -171,73 +214,72 @@
   height: 150px;
   text-align: center;
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   flex-direction: column;
   font-weight: 600;
   font-size: 1.4rem;
   cursor: pointer;
   background: transparent
-  radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
-  no-repeat padding-box;
+    radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
+    no-repeat padding-box;
 }
 
-.dualBox label i{
+.dualBox label i {
   font-size: 3.5rem;
 }
 
-.containerHeader{
+.containerHeader {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.btn{
+.btn {
   background-color: #4169e1;
   display: block;
   width: 100px;
-  border-radius: .5rem;
-  padding: .5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
   text-align: center;
   font-size: 1.4rem;
 }
 
-.containerHeader p{
+.containerHeader p {
   font-size: 1.8rem;
 }
 
-.footerPrice{
+.footerPrice {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 60px;
   background: transparent
-  radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
-  no-repeat padding-box;
+    radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
+    no-repeat padding-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  border-radius: 1.5rem 1.5rem 0rem 0rem ;
+  border-radius: 1.5rem 1.5rem 0rem 0rem;
   z-index: 999;
 }
 
-.footerPrice button{
-  padding: .5rem;
+.footerPrice button {
+  padding: 0.5rem;
   border-radius: 5rem;
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
-.footerPrice button i{
+.footerPrice button i {
   font-size: 2.5rem;
-
 }
 
-.footerCard{
+.footerCard {
   position: fixed;
   left: 0;
   bottom: -800px;
@@ -245,25 +287,25 @@
   width: 100%;
   padding: 2rem;
   height: 80%;
-  transition: bottom .5s;
+  transition: bottom 0.5s;
   padding-top: 1rem;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
 }
 
-.footerCard.active{
+.footerCard.active {
   bottom: 0;
   opacity: 1;
   visibility: visible;
 }
 
-.footerCard p{
+.footerCard p {
   font-size: 1.4rem;
   margin-top: 6rem;
 }
 
-.footerCard .buttonsContainer{
+.footerCard .buttonsContainer {
   margin: 0 auto;
   width: 100%;
   background-color: #2e2e2e;
@@ -271,37 +313,35 @@
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   border-radius: 5rem;
   margin-top: 2rem;
 }
 
-.buttonsContainer button{
+.buttonsContainer button {
   width: 300px;
   border-radius: 5rem;
   height: 100%;
-  border: none ;
-  padding: .5rem;
+  border: none;
+  padding: 0.5rem;
   cursor: pointer;
   /* color: #ccc */
   background-color: transparent;
   color: #f2f6fa;
-
 }
 
-.buttonsContainer .activeButton{
+.buttonsContainer .activeButton {
   background-color: #ccc;
   color: #2e2e2e;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.close{
-  padding: .2rem;
+.close {
+  padding: 0.2rem;
   border-radius: 5rem;
   border: none;
   background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   height: 35px;
   width: 35px;
@@ -310,43 +350,43 @@
   right: 20px;
 }
 
-.close i{
+.close i {
   font-size: 2.5rem;
 }
 
-.footerCard h2:first-child{
+.footerCard h2:first-child {
   position: fixed;
 }
 
-.footerCard ul{
+.footerCard ul {
   list-style: none;
   margin-top: 3rem;
 }
 
-.footerCard ul li{
+.footerCard ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.footerCard ul li p{
+.footerCard ul li p {
   height: 20px;
   overflow: hidden;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
-.gamesBox{
+.gamesBox {
   margin-top: 2rem;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
   gap: 1rem;
   background: transparent
-  radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
-  no-repeat padding-box;
+    radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
+    no-repeat padding-box;
 }
 
-.boxContent{
+.boxContent {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -354,29 +394,29 @@
   gap: 1rem;
 }
 
-.gamesBox img{
+.gamesBox img {
   width: 50px;
 }
 
-.boxHeader{
+.boxHeader {
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  gap: .5rem;
+  gap: 0.5rem;
 }
 
-.boxHeader i{
+.boxHeader i {
   font-size: 2.5rem;
 }
 
-.containerMain ul{
+.containerMain ul {
   list-style: none;
 }
 
-.box{
+.box {
   background: transparent
-  radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
-  no-repeat padding-box;
+    radial-gradient(closest-side at 50% 50%, #2e2e2e 0, #191919 100%) 0 0
+    no-repeat padding-box;
   border-radius: 1rem;
   padding: 2rem;
   text-align: center;
@@ -386,18 +426,18 @@
   width: 100%;
 }
 
-.box img{
+.box img {
   width: 120px;
 }
 
-.box i:first-child{
+.box i:first-child {
   position: absolute;
   left: 0;
   top: 35%;
   font-size: 5rem;
 }
 
-.box i:last-child{
+.box i:last-child {
   position: absolute;
   right: 0;
   top: 35%;

@@ -16,7 +16,7 @@ export default function PcGaming({computers}) {
         </p>
       </div>
       <div className={styles.container}>
-        <div className={styles.hardwareking}>
+        <div className={`  ${styles.productCard} ${styles.hardwareking}`}>
             <img src="./hk.png" alt="" />
             <h2>EL RENDIMEINTO DE GRADO CAMPEON ESTA AQUI</h2>
             <p>Entrando en la Arena... los Productos de edicion limitada del Hardware King </p>
@@ -24,7 +24,7 @@ export default function PcGaming({computers}) {
         </div>
 
         {computers.map((computer) => (
-          <PcCard key={computer.id} price={computer.price} name={computer.name} available={computer.available} slug={computer.slug} />
+          <PcCard key={computer.id} price={computer.price} name={computer.name} available={computer.available} slug={computer.slug} priceOffer={210000} offer={true} />
         ))}
       </div>
     </Layout>

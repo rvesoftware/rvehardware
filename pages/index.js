@@ -14,23 +14,28 @@ export default function Home() {
     <Layout>
       <div className={styles.container}>
         <div className="banner">
-          <h2>Super. Mega. Rapido</h2>
+          <h2 className={styles.firsTitle}>Super. Mega. Rapido</h2>
           <video width="100%" height="100%" loop autoPlay controls>
-            <source src="/VID2.mp4" type="video/mp4" />
+            <source src="/VID11.mp4" type="video/mp4" />
           </video>
-          {/* <p>
-            Por mucho tiempo los amantes de los videojuegos se han conformado
-            con una PC Gamer sin personalidad, sin carácter y sin aquello que te
-            haga vibrar. Con una PC de Real Vision Hardware, tienes el extremo
-            opuesto: una PC Gamer con identidad única, con estética inigualable
-            y con tanta potencia que no pasarás desapercibido en cualquier
-            juego.
-          </p> */}
-          <h3>Potenciar la mejor tanto en el trabajo como en el juego.</h3>
+     
+          <div className={styles.contentFot}>
+
+          <h3>JUEGA A TU MANERA</h3>
+          <h2 className="home__joga">JOGA BONITO</h2>
+          <button>BEST SELLER</button>
+          <div className={styles.red}>
+            <Link href="/" ><a> <i class='bx bxl-youtube'></i></a></Link>
+            <Link href="/" ><a> <i class='bx bxl-instagram-alt' ></i></a></Link>
+            <Link href="/" ><a> <i class='bx bxl-facebook' ></i></a></Link>
+          </div>
+          </div>
+
+          {/* <h3>Potenciar la mejor tanto en el trabajo como en el juego.</h3> */}
         </div>
       </div>
 
-      <section>
+      {/* <section>
         <h2>EXPERIENCIA UNICA</h2>
         <p>Nuestro practica visor de realidad aumentada le permite explorar todos los aspectos que tendra su PC GAMER en alta definicion en la pantalla de su dispositivo movil o tableta.</p>
         <Canvas className="canvas">
@@ -100,7 +105,15 @@ export default function Home() {
           {" "}
           <i className="bx bxl-instagram"></i> Siguenos
         </button>
-      </section>
+      </section> */}
     </Layout>
   );
 }
+     {/* <p>
+            Por mucho tiempo los amantes de los videojuegos se han conformado
+            con una PC Gamer sin personalidad, sin carácter y sin aquello que te
+            haga vibrar. Con una PC de Real Vision Hardware, tienes el extremo
+            opuesto: una PC Gamer con identidad única, con estética inigualable
+            y con tanta potencia que no pasarás desapercibido en cualquier
+            juego.
+          </p> */}
