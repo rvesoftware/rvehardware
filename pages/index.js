@@ -15,7 +15,7 @@ export default function Home() {
       <div className={styles.container}>
         <div className="banner">
           <h2 className={styles.firsTitle}>Super. Mega. Rapido</h2>
-          <video width="100%" height="100%" loop autoPlay controls>
+          <video width="100%" height="100%" loop autoPlay>
             <source src="/VID11.mp4" type="video/mp4" />
           </video>
      
