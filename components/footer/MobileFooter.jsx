@@ -7,31 +7,31 @@ export default function MobileFooter() {
     <footer className={styles.footer}>
       <Link href="">
         <a>
-          <i class="bx bxs-home"></i>
+          <i className="bx bxs-home"></i>
           <p>Home</p>
         </a>
       </Link>
       <Link href="">
         <a>
-          <i class="bx bxs-cart-alt"></i>
+          <i className="bx bxs-cart-alt"></i>
           <p>Carrito</p>
         </a>
       </Link>
       <Link href="/pcgaming">
         <a>
-          <i class="bx bxs-shopping-bag-alt"></i>
+          <i className="bx bxs-shopping-bag-alt"></i>
           <p>Tienda</p>
         </a>
       </Link>
       <Link href="">
         <a>
-          <i class="bx bxl-blogger"></i>
+          <i className="bx bxl-blogger"></i>
           <p> Blog</p>
         </a>
       </Link>
       <Link href="">
         <a>
-          <i class="bx bx-link-alt"></i>
+          <i className="bx bx-link-alt"></i>
           <p>Linktree</p>
         </a>
       </Link>

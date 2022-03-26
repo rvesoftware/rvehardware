@@ -54,7 +54,7 @@ export default function Header() {
       <ul>
         <div className={styles.menu}>
           <button >
-            <i class="bx bx-menu-alt-left"></i>
+            <i className="bx bx-menu-alt-left"></i>
           </button>
         </div>
       </ul>

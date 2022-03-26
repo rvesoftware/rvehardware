@@ -25,9 +25,9 @@ export default function Home() {
           <h2 className="home__joga">JOGA BONITO</h2>
           <button>BEST SELLER</button>
           <div className={styles.red}>
-            <Link href="/" ><a> <i class='bx bxl-youtube'></i></a></Link>
-            <Link href="/" ><a> <i class='bx bxl-instagram-alt' ></i></a></Link>
-            <Link href="/" ><a> <i class='bx bxl-facebook' ></i></a></Link>
+            <Link href="/" ><a> <i className='bx bxl-youtube'></i></a></Link>
+            <Link href="/" ><a> <i className='bx bxl-instagram-alt' ></i></a></Link>
+            <Link href="/" ><a> <i className='bx bxl-facebook' ></i></a></Link>
           </div>
           </div>
 
