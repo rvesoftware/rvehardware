@@ -33,39 +33,28 @@ export default function Header() {
             <div>Portatiles</div>
           </div>
         </div>
-        <Link href="/software">
+        {/* <Link href="/software">
           <a>Software</a>
-        </Link>
-        {/* <Link href=""><a>Computadoras</a></Link> */}
-        <Link href="/tracking">
+        </Link> */}
+        {/* <Link href="/tracking">
           <a>Seguimiento</a>
-        </Link>
-        <Link href="/build">
+        </Link> */}
+        {/* <Link href="/build">
           <a>Construir</a>
-        </Link>
-        <Link href="/creators">
+        </Link> */}
+        {/* <Link href="/creators">
           <a>Creadores</a>
-        </Link>
+        </Link> */}
         <Link href="/blog">
           <a>Blog</a>
         </Link>
       </nav>
 
       <ul>
-        <Link href="/pcgaming">
-          <a>
-            <i className='bx bx-shopping-bag' ></i>
-          </a>
-        </Link>
 
         <Link href="/">
           <a>
             <i className="bx bx-cart"></i>
-          </a>
-        </Link>
-        <Link href="/">
-          <a>
-            <i className="bx bx-user"></i>
           </a>
         </Link>
       </ul>

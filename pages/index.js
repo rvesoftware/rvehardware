@@ -15,17 +15,17 @@ export default function Home() {
       <div className={styles.container}>
         <div className="banner">
           <h2>Super. Mega. Rapido</h2>
-          <video width="100%" height="100%" loop autoPlay >
+          <video width="100%" height="100%" loop autoPlay controls>
             <source src="/VID2.mp4" type="video/mp4" />
           </video>
-          <p>
+          {/* <p>
             Por mucho tiempo los amantes de los videojuegos se han conformado
             con una PC Gamer sin personalidad, sin carácter y sin aquello que te
             haga vibrar. Con una PC de Real Vision Hardware, tienes el extremo
             opuesto: una PC Gamer con identidad única, con estética inigualable
             y con tanta potencia que no pasarás desapercibido en cualquier
             juego.
-          </p>
+          </p> */}
           <h3>Potenciar la mejor tanto en el trabajo como en el juego.</h3>
         </div>
       </div>
