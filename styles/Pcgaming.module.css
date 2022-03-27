@@ -53,7 +53,8 @@
 .productCard .flex{
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  height: 100%;
 }
 .productCard:nth-child(1) {
   grid-row: span 2;
@@ -195,7 +196,7 @@
 .containerMain h2 {
   text-align: center;
   font-weight: 500;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 
 .dualBox {
@@ -203,7 +204,9 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  margin: 0 auto;
   margin-top: 2rem;
+  width: 90%;
 }
 
 .dualBox label {
@@ -214,6 +217,7 @@
   height: 150px;
   text-align: center;
   display: flex;
+  align-items: center;
   gap: 0.5rem;
   flex-direction: column;
   font-weight: 600;
@@ -229,11 +233,13 @@
 }
 
 .containerHeader {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 
 .btn {
   background-color: #4169e1;
@@ -263,7 +269,7 @@
   justify-content: space-between;
   padding: 0 1rem;
   border-radius: 1.5rem 1.5rem 0rem 0rem;
-  z-index: 999;
+  z-index: 999999;
 }
 
 .footerPrice button {
@@ -279,6 +285,9 @@
   font-size: 2.5rem;
 }
 
+.footerPrice .span{
+  visibility: hidden;
+}
 .footerCard {
   position: fixed;
   left: 0;
@@ -289,7 +298,7 @@
   height: 80%;
   transition: bottom 0.5s;
   padding-top: 1rem;
-  z-index: 999;
+  z-index: 999999;
   opacity: 0;
   visibility: hidden;
 }
@@ -376,6 +385,8 @@
 }
 
 .gamesBox {
+  width: 95%;
+  margin: 0 auto;
   margin-top: 2rem;
   border-radius: 1rem;
   padding: 2rem;

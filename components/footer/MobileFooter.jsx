@@ -5,13 +5,13 @@ import styles from "../../styles/MobileFooter.module.css";
 export default function MobileFooter() {
   return (
     <footer className={styles.footer}>
-      <Link href="">
+      <Link href="/">
         <a>
           <i className="bx bxs-home"></i>
           <p>Home</p>
         </a>
       </Link>
-      <Link href="">
+      <Link href="/cart">
         <a>
           <i className="bx bxs-cart-alt"></i>
           <p>Carrito</p>
@@ -23,7 +23,7 @@ export default function MobileFooter() {
           <p>Tienda</p>
         </a>
       </Link>
-      <Link href="">
+      <Link href="/blog">
         <a>
           <i className="bx bxl-blogger"></i>
           <p> Blog</p>

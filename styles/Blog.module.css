@@ -154,11 +154,11 @@
 }
 
 .containerMain{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 3rem 8rem;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    /* align-items: flex-start; */
+    /* justify-content: center; */
+    margin: 3rem auto;
 }
 
 .aside h2{
@@ -231,7 +231,7 @@
 
     .containerMain{
         margin: 1rem;
-        width: 100%;
+        width: 90%;
     }
 
     .containerMain .centercontent{
