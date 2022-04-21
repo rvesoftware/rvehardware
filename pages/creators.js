@@ -44,6 +44,27 @@ export default function Creators() {
           </div>
 
         </div>
+        <div className={styles.creatorCard}>
+          <div className={styles.mib}>
+            <img src="/hkpp.jpg" alt="" />
+          </div>
+          <div className={styles.content}>
+
+          <h2>Freddy Rosillo</h2>
+          <div className={styles.social}>
+            <Link href="https://www.youtube.com/c/spameroficial"><a><i className='bx bxl-youtube'></i></a></Link>
+            {/* <Link href=""><a><i className='bx bxl-twitter'></i></a></Link> */}
+            <Link href="https://www.instagram.com/aaron.f.r.v/"><a><i className='bx bxl-instagram'></i></a></Link>
+            {/* <Link href=""><a><i className='bx bxl-tiktok'></i></a></Link> */}
+            {/* <Link href=""><a><i className='bx bxl-twitch'></i></a></Link> */}
+            <Link href="https://www.facebook.com/freddy.rosillo.7311/"><a><i className='bx bxl-facebook'></i></a></Link>
+          </div>
+          <p>
+          Me llamo freddy teng o24 años vivo con mi esposa y mi hijo en bogota como creador bueno creo mis propios diseños mis videos los edito yo como pueda y los subo en mis canales
+          </p>
+          </div>
+
+        </div>
       </div>
     </Layout>
   );

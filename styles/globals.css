@@ -269,3 +269,82 @@ video{
 
 .swiper{
 }
+
+
+/* SHIPPING */
+
+.form-shipping{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-shipping > div{
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.form-shipping label{
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, .5);
+}
+
+.label-content{
+  width: 100%;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  color: #f2f6fa;
+}
+
+.label-content i{
+  height: 100%;
+  font-size: 3rem;
+}
+
+.label-content p{
+ display: flex;
+ align-items: center;
+ gap: .5rem;
+  height: 100%;
+  color: #f2f6fa;
+
+}
+
+.form-shipping input[type="text"]{
+  height: 40px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, .1);
+  border: none;
+  color: #f2f6fa;
+  outline: none;
+}
+
+.form-shipping button{
+  height: 30px;
+  border: none;
+  background-color: midnightblue;
+  color: #f2f6fa;
+}
+
+.item-container{
+  text-align: center;
+}
+
+.item-container img{
+  width: 25%;
+}
+
+.item-container h2{
+  margin-bottom: 2rem;
+}

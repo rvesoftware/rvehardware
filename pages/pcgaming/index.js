@@ -3,7 +3,6 @@ import PcCard from "../../components/PcCard";
 import styles from ".//../../styles/Pcgaming.module.css";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
-
 export default function PcGaming({computers}) {
   return (
     <Layout>
@@ -35,7 +34,7 @@ export default function PcGaming({computers}) {
 export async function getServerSideProps(){
 
   const client = new ApolloClient({
-    uri: "https://rveapiql.herokuapp.com/graphql",
+    uri: "https://rveapiql.herokuapp.com/",
     cache: new InMemoryCache
   })
 

@@ -29,7 +29,7 @@ export default function MobileFooter() {
           <p> Blog</p>
         </a>
       </Link>
-      <Link href="">
+      <Link href="/">
         <a>
           <i className="bx bx-link-alt"></i>
           <p>Linktree</p>
